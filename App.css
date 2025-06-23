@@ -1,0 +1,47 @@
+*{
+  margin: 0;
+}
+.App{
+  background:rgb(255, 255, 255);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.AppGlass {
+  background-color: rgb(232, 234, 238);
+  display: grid;
+  grid-template-columns: 11rem auto 15rem;
+  overflow: hidden;
+}
+.TopRightEmail {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-weight: bold;
+  color: #333;
+}
+
+@media screen and (max-width: 1200px) {
+  .AppGlass {
+    grid-template-columns: 10% 50% auto;
+    overflow-y: auto;
+  
+  display: flex;
+  width: 100%;
+}
+
+  }
+
+@media screen and (max-width: 768px) {
+  .AppGlass {
+    grid-template-columns: 1fr;
+    
+  
+  }
+
+  .AppGlass::-webkit-scrollbar {
+    display: none;
+  }
+
+}
